@@ -2,4 +2,4 @@
 !/target
 !/pom.xml
 !/.gitignore
-!1/README.md
+!/README.md
