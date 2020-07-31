@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--找到刚刚创建的dao接口-->
+<mapper namespace="cn.cqupt.Dao.DaoMap">
+    <!--获取所有用户-->
+    <select id="findAll" resultType="cn.cqupt.Moudle.Person">
+        SELECT * FROM person
+    </select>
+    <select id="findAllPerson" resultType="cn.cqupt.Moudle.Person">
+        SELECT * FROM person
+    </select>
+    <select id="selectOne" resultType="cn.cqupt.Moudle.Person">
+        SELECT * FROM person WHERE pid=#{pid}
+    </select>
+    <insert id="insert" parameterType="cn.cqupt.Moudle.Person">
+          insert into person values (#{pid},#{pname},#{page},#{psex},#{image})
+    </insert>
+    
+    <delete id="delete" parameterType="cn.cqupt.Moudle.Person">
+        DELETE FROM person WHERE pid=#{pid}
+    </delete>
+    <update id="update" parameterType="cn.cqupt.Moudle.Person">
+        UPDATE person SET pname=#{pname},page=#{page},psex=#{psex}
+        WHERE pid=#{pid}
+    </update>
+
+</mapper>

@@ -1,0 +1,6 @@
+cn\cqupt\Service\Lmpl\PersonServiceLmpl.class
+cn\cqupt\Control\UserControl.class
+cn\cqupt\Service\PersonService.class
+cn\cqupt\Dao\DaoMap.class
+cn\cqupt\Control\PersonControl.class
+cn\cqupt\Moudle\Person.class
